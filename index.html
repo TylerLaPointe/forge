@@ -8,244 +8,242 @@
     <title>Forge</title>
 </head>
 <body>
-    <div class="charactername">
-        <label>Character Name
-        <input type="text" name="charactername" required>
-        </label> 
-    </div>
-
-    <div class="meta">
-        <div class="role">
-            <label>Role
-            <input type="text" name="role" required>
-            </label>
+    <div class="sheet">
+        <div class="charactername">
+            <label>Character Name
+            <input type="text" name="charactername" required>
+            </label> 
         </div>
 
-        <div class="level">
-            <label>Level
-            <input type="text" name="level" required>
-            </label>
-        </div>
-
-        <div class="race">
-            <label>Race 
-            <input type="text" name="race" required>
-            </label>
-        </div>
-
-        <div class="background">
-            <label>Background 
-            <input type="text" name="background" required>
-            </label>
-        </div>
-
-        <div class="alignment">
-            <label>Alignment 
-            <input type="text" name="alignment" required>
-            </label>
-        </div>
-
-        <div class="experience">
-            <label>Experience Points
-            <input type="text" name="experience" required>
-            </label>
-        </div>
-    </div>
-
-    <br>
-
-    <div class="attributes">
-        <div class="strength">
-            <label>Strength 
-            <input type="text" name="strength" required>
-            <input type="text" class="bonus" placeholder="BONUS">
-            </label>
-        </div>
-
-        <div class="dexterity">
-            <label>Dexterity 
-            <input type="text" name="dexterity" required>
-            <input type="text" class="bonus" placeholder="BONUS">
-            </label>
-        </div>
-
-        <div class="constitution">
-            <label>Constitution 
-            <input type="text" name="constitution" required>
-            <input type="text" class="bonus" placeholder="BONUS">
-            </label>
-        </div>
-
-        <div class="intelligence">
-            <label>Intelligence 
-            <input type="text" name="intelligence" required>
-            <input type="text" class="bonus" placeholder="BONUS">
-            </label>
-        </div>
-
-        <div class="wisdom">
-            <label>Wisdom 
-            <input type="text" name="wisdom" required>
-            <input type="text" class="bonus" placeholder="BONUS">
-            </label>
-        </div>
-
-        <div class="charisma">
-            <label>Charism  
-            <input type="text" name="charisma" required>
-            <input type="text" class="bonus" placeholder="BONUS">
-            </label>
-        </div>
-    </div>
-    
-    <div class="proficiency">
-        <input type="text" placeholder="0 PROFICIENCY BONUS">
-    </div>
-    
-    <div class="other-languages">
-        <input type="text" placeholder="Proficiencies">
-        <input type="text" placeholder="Languages">
-    </div>
-    
-    <div class="saving-throws">
-        <div class="saving-throws-strength">
-            <input type="checkbox" name="strength"> 
-            <input type="text" placeholder="0">
-            <label for="strength">Strength</label>
-        </div>
-        <div class="saving-throws-dexterity">
-            <input type="checkbox" name="dexterity"> 
-            <input type="text" placeholder="0">
-            <label for="dexterity">Dexterity</label>
-        </div>
-        <div class="saving-throws-constitution">
-            <input type="checkbox" name="constitution"> 
-            <input type="text" placeholder="0">
-            <label for="dexterity">Constitution</label>
-        </div>
-        <div class="saving-throws-intelligence">
-            <input type="checkbox" name="intelligence"> 
-            <input type="text" placeholder="0">
-            <label for="intelligence">Intelligence</label>
-        </div>
-        <div class="saving-throws-wisdom">
-            <input type="checkbox" name="wisdom"> 
-            <input type="text" placeholder="0">
-            <label for="wisdom">Wisdom</label>
-        </div>
-        <div class="saving-throws-charisma">
-            <input type="checkbox" name="charisma"> 
-            <input type="text" placeholder="0">
-            <label for="charisma">Charisma</label>
-        </div>
-    </div>
-    
-    <div class="perception">
-        <input type="text" placeholder="0 PASSIVE WISDOM (PERCEPTION)">
-    </div>
-    <div class="primary">
-        <div class="armor-class">
-            <input type="text" placeholder="0 ARMOR CLASS">
-        </div>
-        <div class="initiative">
-            <input type="text" placeholder="0 INITIATIVE">
-        </div>
-        <div class="speed">
-            <input type="text" placeholder="0 SPEED">
-        </div>
-        <div class="hit-points">
-            <div class="hp-max">
-                <input type="text" placeholder="0 HIT POINT MAXIMUM">
+        <div class="meta">
+            <div class="role">
+                <label>Role
+                <input type="text" name="role" required>
+                </label>
             </div>
-            <div class="hp-current">
-                <input type="text" placeholder="0 CURRENT HIT POINTS">
+
+            <div class="level">
+                <label>Level
+                <input type="text" name="level" required>
+                </label>
             </div>
-            <div class="hp-temporary">
-                <input type="text" placeholder="0 TEMPORARY HIT POINTS">
+
+            <div class="race">
+                <label>Race 
+                <input type="text" name="race" required>
+                </label>
+            </div>
+
+            <div class="background">
+                <label>Background 
+                <input type="text" name="background" required>
+                </label>
+            </div>
+
+            <div class="alignment">
+                <label>Alignment 
+                <input type="text" name="alignment" required>
+                </label>
+            </div>
+
+            <div class="experience">
+                <label>Experience Points
+                <input type="text" name="experience" required>
+                </label>
             </div>
         </div>
-        <div class="hit-dice">
-            <div class="hit-dice-total">
-                <input type="text" placeholder="Total 1d10">
-            </div>
-        </div>
-    </div>
-    
-    <div class="death-saves">
-        <div class="successes">
-            <label for="successess">Successes</label>
-            <input type="checkbox" name="successess">
-            <input type="checkbox">
-            <input type="checkbox"> 
-        </div>
-        <div class="failures">
-            <label for="failures">Failures</label>
-            <input type="checkbox" name="failures">
-            <input type="checkbox">
-            <input type="checkbox"> 
-        </div>
-    </div>
-    
-    <div class="combat">
-        <div class="combat-slot">
-            <input type="text" placeholder="NAME">
-            <input type="text" placeholder="ATK BONUS">
-            <input type="text" placeholder="DAMAGE/TYPE">
-        </div>
-        <div class="combat-slot">
-            <input type="text" placeholder="NAME">
-            <input type="text" placeholder="ATK BONUS">
-            <input type="text" placeholder="DAMAGE/TYPE">
-        </div>
-        <div class="combat-slot">
-            <input type="text" placeholder="NAME">
-            <input type="text" placeholder="ATK BONUS">
-            <input type="text" placeholder="DAMAGE/TYPE">
-        </div>
-    </div>
-    
-    <div class="equipment">
-        <div class="currency">
-            <div class="copper">
-                <input type="text" placeholder="0 COPPER PIECES">
-            </div>
-            <div class="silver">
-                <input type="text" placeholder="0 SILVER PIECES">
-            </div>
-            <div class="electrum">
-                <input type="text" placeholder="0 ELECTRUM PIECES">
-            </div>
-            <div class="gold">
-                <input type="text" placeholder="0 GOLD PIECES">
-            </div>
-            <div class="platinum">
-                <input type="text" placeholder="0 PLATINUM PIECES">
-            </div>
-        </div>
-        <input type="text" placeholder="EQUIPMENT">
-    </div>
-    
-    <div class="persona">
-        <div class="personality-traits">
-            <input type="text" placeholder="PERSONALITY TRAITS">    
-        </div>
-        <div class="ideals">
-            <input type="text" placeholder="IDEALS">
-        </div>
-        <div class="bonds">
-            <input type="text" placeholder="BONDS">
-        </div>
-        <div class="flaws">
-            <input type="text" placeholder="FLAWS">
-        </div>
-    </div>
-    
-    <div class="features">
-        <input type="text" placeholder="FEATURES & TRAITS">
-    </div>
 
+        <br>
 
+        <div class="attributes">
+            <div class="strength">
+                <label>Strength 
+                <input type="text" name="strength" required>
+                <input type="text" class="bonus" placeholder="BONUS">
+                </label>
+            </div>
 
-    
+            <div class="dexterity">
+                <label>Dexterity 
+                <input type="text" name="dexterity" required>
+                <input type="text" class="bonus" placeholder="BONUS">
+                </label>
+            </div>
+
+            <div class="constitution">
+                <label>Constitution 
+                <input type="text" name="constitution" required>
+                <input type="text" class="bonus" placeholder="BONUS">
+                </label>
+            </div>
+
+            <div class="intelligence">
+                <label>Intelligence 
+                <input type="text" name="intelligence" required>
+                <input type="text" class="bonus" placeholder="BONUS">
+                </label>
+            </div>
+
+            <div class="wisdom">
+                <label>Wisdom 
+                <input type="text" name="wisdom" required>
+                <input type="text" class="bonus" placeholder="BONUS">
+                </label>
+            </div>
+
+            <div class="charisma">
+                <label>Charism  
+                <input type="text" name="charisma" required>
+                <input type="text" class="bonus" placeholder="BONUS">
+                </label>
+            </div>
+        </div>
+        
+        <div class="proficiency">
+            <input type="text" placeholder="0 PROFICIENCY BONUS">
+        </div>
+        
+        <div class="other-languages">
+            <input type="text" placeholder="Proficiencies">
+            <input type="text" placeholder="Languages">
+        </div>
+        
+        <div class="saving-throws">
+            <div class="saving-throws-strength">
+                <input type="checkbox" name="strength"> 
+                <input type="text" placeholder="0">
+                <label for="strength">Strength</label>
+            </div>
+            <div class="saving-throws-dexterity">
+                <input type="checkbox" name="dexterity"> 
+                <input type="text" placeholder="0">
+                <label for="dexterity">Dexterity</label>
+            </div>
+            <div class="saving-throws-constitution">
+                <input type="checkbox" name="constitution"> 
+                <input type="text" placeholder="0">
+                <label for="dexterity">Constitution</label>
+            </div>
+            <div class="saving-throws-intelligence">
+                <input type="checkbox" name="intelligence"> 
+                <input type="text" placeholder="0">
+                <label for="intelligence">Intelligence</label>
+            </div>
+            <div class="saving-throws-wisdom">
+                <input type="checkbox" name="wisdom"> 
+                <input type="text" placeholder="0">
+                <label for="wisdom">Wisdom</label>
+            </div>
+            <div class="saving-throws-charisma">
+                <input type="checkbox" name="charisma"> 
+                <input type="text" placeholder="0">
+                <label for="charisma">Charisma</label>
+            </div>
+        </div>
+        
+        <div class="perception">
+            <input type="text" placeholder="0 PASSIVE WISDOM (PERCEPTION)">
+        </div>
+        <div class="primary">
+            <div class="armor-class">
+                <input type="text" placeholder="0 ARMOR CLASS">
+            </div>
+            <div class="initiative">
+                <input type="text" placeholder="0 INITIATIVE">
+            </div>
+            <div class="speed">
+                <input type="text" placeholder="0 SPEED">
+            </div>
+            <div class="hit-points">
+                <div class="hp-max">
+                    <input type="text" placeholder="0 HIT POINT MAXIMUM">
+                </div>
+                <div class="hp-current">
+                    <input type="text" placeholder="0 CURRENT HIT POINTS">
+                </div>
+                <div class="hp-temporary">
+                    <input type="text" placeholder="0 TEMPORARY HIT POINTS">
+                </div>
+            </div>
+            <div class="hit-dice">
+                <div class="hit-dice-total">
+                    <input type="text" placeholder="Total 1d10">
+                </div>
+            </div>
+        </div>
+        
+        <div class="death-saves">
+            <div class="successes">
+                <label for="successess">Successes</label>
+                <input type="checkbox" name="successess">
+                <input type="checkbox">
+                <input type="checkbox"> 
+            </div>
+            <div class="failures">
+                <label for="failures">Failures</label>
+                <input type="checkbox" name="failures">
+                <input type="checkbox">
+                <input type="checkbox"> 
+            </div>
+        </div>
+        
+        <div class="combat">
+            <div class="combat-slot">
+                <input type="text" placeholder="NAME">
+                <input type="text" placeholder="ATK BONUS">
+                <input type="text" placeholder="DAMAGE/TYPE">
+            </div>
+            <div class="combat-slot">
+                <input type="text" placeholder="NAME">
+                <input type="text" placeholder="ATK BONUS">
+                <input type="text" placeholder="DAMAGE/TYPE">
+            </div>
+            <div class="combat-slot">
+                <input type="text" placeholder="NAME">
+                <input type="text" placeholder="ATK BONUS">
+                <input type="text" placeholder="DAMAGE/TYPE">
+            </div>
+        </div>
+        
+        <div class="equipment">
+            <div class="currency">
+                <div class="copper">
+                    <input type="text" placeholder="0 COPPER PIECES">
+                </div>
+                <div class="silver">
+                    <input type="text" placeholder="0 SILVER PIECES">
+                </div>
+                <div class="electrum">
+                    <input type="text" placeholder="0 ELECTRUM PIECES">
+                </div>
+                <div class="gold">
+                    <input type="text" placeholder="0 GOLD PIECES">
+                </div>
+                <div class="platinum">
+                    <input type="text" placeholder="0 PLATINUM PIECES">
+                </div>
+            </div>
+            <input type="text" placeholder="EQUIPMENT">
+        </div>
+        
+        <div class="persona">
+            <div class="personality-traits">
+                <input type="text" placeholder="PERSONALITY TRAITS">    
+            </div>
+            <div class="ideals">
+                <input type="text" placeholder="IDEALS">
+            </div>
+            <div class="bonds">
+                <input type="text" placeholder="BONDS">
+            </div>
+            <div class="flaws">
+                <input type="text" placeholder="FLAWS">
+            </div>
+        </div>
+        
+        <div class="features">
+            <input type="text" placeholder="FEATURES & TRAITS">
+        </div>
+    </div>  
 </body>
 </html>
