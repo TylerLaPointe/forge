@@ -1,27 +1,41 @@
 @import url("node_modules/normalize.css/normalize.css");
 
 body {
-    display: grid;
-    height: 100vh;
-    font: small/1.5em Verdana, Helvetica, Arial, sans-serif;
-    margin: 0;
+    background-color: green;
+    /* font: small/1.5em Verdana, Helvetica, Arial, sans-serif; */
+    margin: 0 1.5%;
 } 
 
 .sheet {
-    width: 960px;
-    background-color: black;
-    margin: 20px 20px;
-    display: flex;
-    flex: 1 1 960px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: 10vw 30vw 10vw; */
+    grid-gap: 1em;
+    width: 100%;
+    /* grid-template-areas:
+        "header header-2"
+        "sidebar content-1 content-2"
+        "sidebar-2 content-3 content-4"
+        "footer footer footer"; */
 }
 
-.charactername { 
-    display: flex;
-    justify-content: center;
+.sheet > div {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
-.charactername input {
+.names-entry { 
+    /* grid-area: header; */
+    grid-column: 1 / span 1;
+}
+
+.names-entry > * {
+    padding: 10px;
+    flex: 1 1 24%;
+}
+
+/* .charactername input { */
     border: none;
 }
 
@@ -30,6 +44,37 @@ body {
 }
 
 .meta {
-    background-color: red;
-    width: 50%
+    /* grid-area: header-2; */
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: span 5;
 }
+
+.meta > * {
+    padding: 10px;
+    flex: 1 1 24%;
+}
+
+.attributes {
+    
+}
+
+.primary {
+    
+}
+
+.saving-throws {
+    
+}
+
+.combat {
+    
+}
+
+.equipment {
+    
+}
+
+.persona {
+
+} 
