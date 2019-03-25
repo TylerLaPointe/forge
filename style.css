@@ -3,15 +3,17 @@
 body {
     background-color: green;
     /* font: small/1.5em Verdana, Helvetica, Arial, sans-serif; */
-    margin: 0 1.5%;
+    margin: 2% 0;
 } 
 
 .sheet {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 300px);
     /* grid-template-rows: 10vw 30vw 10vw; */
     grid-gap: 1em;
+    height: 75%;
     width: 100%;
+    justify-content: center;
     /* grid-template-areas:
         "header header-2"
         "sidebar content-1 content-2"
@@ -22,12 +24,23 @@ body {
 .sheet > div {
     background-color: white;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 7px;
+}
+
+.sheet * input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.sheet * label {
+    display: flex;
 }
 
 .names-entry { 
     /* grid-area: header; */
-    grid-column: 1 / span 1;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: span 1;
 }
 
 .names-entry > * {
@@ -35,19 +48,24 @@ body {
     flex: 1 1 24%;
 }
 
-/* .charactername input { */
-    border: none;
+.names-entry label {
+    display: grid;
 }
 
 .charactername:focus {
     border: 1px solid black
 }
 
+.death-saves > * {
+    padding: 10px;
+    flex: 1 1 24%;
+}
+
 .meta {
     /* grid-area: header-2; */
     display: flex;
     flex-wrap: wrap;
-    grid-column: span 5;
+    grid-column: span 2;
 }
 
 .meta > * {
@@ -55,16 +73,42 @@ body {
     flex: 1 1 24%;
 }
 
+.meta label {
+    display: grid;
+}
+
 .attributes {
-    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.attributes > * {
+    padding: 10px;
+    flex: 1 1 24%;
 }
 
 .primary {
-    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primary > * {
+    padding: 10px;
+    flex: 1 1 24%;
 }
 
 .saving-throws {
-    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.saving-throws > * {
+    padding: 10px;
+    flex: 1 1 24%;
+}
+
+.saving-throws label {
+    display: grid;
 }
 
 .combat {
